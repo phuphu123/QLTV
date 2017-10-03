@@ -42,6 +42,10 @@ namespace QLThuVien
                 lblthongbao.Text = "mk không được trống";
                 txtmk.Focus();
                 return;
+ 	SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "sp_luutk";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
             }
             if (txtnlmk.Text == "")
             {

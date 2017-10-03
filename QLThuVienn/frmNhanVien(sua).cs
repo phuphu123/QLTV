@@ -71,6 +71,13 @@ namespace QLThuVien
             dgvttnv.Columns[7].HeaderText = "ĐiệnThoại";
         }
         #endregion
+ txtManv.Enabled = false;
+            loadnvlenluoi();
+            A = label9.Text;
+            label9.Text = "";
+            timer1.Start();
+            data_bingding();
+            Hientieudecot();
         #region xử lý bingding
         private void data_bingding()
         {

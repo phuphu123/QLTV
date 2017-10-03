@@ -52,6 +52,15 @@ namespace QLThuVien
                 txttinhtrang.DataBindings.Clear();
             if (txtsoluongsm.DataBindings != null)
                 txtsoluongsm.DataBindings.Clear();
+  //Download source code mien phi tai Sharecode.vn
+            loaddllenfile();
+            hiendlphieumuon();
+            hiendlsach();
+            A = label9.Text;
+            label9.Text = "";
+            timer1.Start();
+            hientieudecot();
+            data_bingding();
         }
         #endregion
         #region tiêu đề cột
