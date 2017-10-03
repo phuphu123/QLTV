@@ -29,6 +29,7 @@ namespace QLThuVien
             ten = txttentk.Text;
             mk = txtmk.Text;
             nlmk = txtnlmk.Text;
+ SqlConnection cnn;
             if (txttentk.Text == "")
             {
                 lblthongbao.ForeColor = Color.Red;
@@ -73,7 +74,11 @@ namespace QLThuVien
                 lblthongbao.ForeColor = Color.Red;
                 lblthongbao.Text = "Mật khẩu không trùng";
                 txtmk.Focus();
-                return;                
+                return;  
+ 	lblthongbao.ForeColor = Color.Red;
+                lblthongbao.Text = "Tên quá ngắn";
+                txttentk.Focus();
+                return;              
             }
             cmd.Parameters.AddWithValue("@tendn", ten);
             cmd.Parameters.AddWithValue("@mk", mk);

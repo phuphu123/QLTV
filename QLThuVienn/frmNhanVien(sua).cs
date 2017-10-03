@@ -69,6 +69,9 @@ namespace QLThuVien
             dgvttnv.Columns[5].HeaderText = "Chức Vụ";
             dgvttnv.Columns[6].HeaderText = "Địa Chỉ";
             dgvttnv.Columns[7].HeaderText = "ĐiệnThoại";
+ cmd.CommandText = "sp_LOADNHANVIEN";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
         }
         #endregion
  txtManv.Enabled = false;
