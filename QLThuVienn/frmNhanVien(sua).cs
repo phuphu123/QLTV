@@ -30,14 +30,13 @@ namespace QLThuVien
             timer1.Start();
             data_bingding();
             Hientieudecot();
-        }
+	 label9.Text = "";
         #region xuly mã
         private string taomanv()
         {
             string manv;
             Random r = new Random();
-            manv ="NV"+ r.Next(50, 999).ToString();
-            return manv;
+             label9.Text = "";
         }
         #endregion
         #region Doc du lieu len luoi

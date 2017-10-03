@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Collections.Generic;
+using System.ComponentModel;
 namespace QLThuVien
 {
     public partial class frmdangky : Form

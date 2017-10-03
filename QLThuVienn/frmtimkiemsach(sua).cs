@@ -53,6 +53,8 @@ namespace QLThuVien
         }
         private DataTable docsachtheoma(string ma)
         {
+	DataTable sach = new DataTable();
+            cmd.CommandType = CommandType.StoredProcedure;
             string chuoikn = "select * from SACH where MaSach LIKE @MaSach";
             SqlCommand cmd = new SqlCommand(chuoikn, cnn);
             DataTable sach = new DataTable();

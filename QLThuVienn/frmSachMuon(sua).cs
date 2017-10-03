@@ -74,6 +74,16 @@ namespace QLThuVien
         }
         #endregion
         #region load sach
+	if (cbomapm.DataBindings != null)
+                cbomapm.DataBindings.Clear();
+            if (cbomasach.DataBindings != null)
+                cbomasach.DataBindings.Clear();
+            if (dtngaytra.DataBindings != null)
+                dtngaytra.DataBindings.Clear();
+            if (txttinhtrang.DataBindings != null)
+                txttinhtrang.DataBindings.Clear();
+            if (txtsoluongsm.DataBindings != null)
+                txtsoluongsm.DataBindings.Clear();
         private DataTable loadsach()
         {
             SqlCommand cmd = new SqlCommand();
